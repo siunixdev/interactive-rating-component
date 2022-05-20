@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <Link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div id="start">
+        <div class="before">
+          <div class="pin">
+            <img src="/images/icon-star.svg" alt="">
+          </div>
+          <h1 class="title">How did we do?</h1>
+          <div class="desc">
+            <p>Please let us know how we did with your support request. All feedback is appreciated to
+              help us improve our
+              offering!</p>
+            <div class="rate">
+              <div class="rate__point" onclick="selectRate(1)" id="1">
+                1
+              </div>
+              <div class="rate__point" onclick="selectRate(2)" id="2">
+                2
+              </div>
+              <div class="rate__point" onclick="selectRate(3)" id="3">
+                3
+              </div>
+              <div class="rate__point" onclick="selectRate(4)" id="4">
+                4
+              </div>
+              <div class="rate__point" onclick="selectRate(5)" id="5">
+                5
+              </div>
+            </div>
+          </div>
+          <button class="button" onclick="submitRate()">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div id="finished">
+        <div class="after">
+          <img src="/images/illustration-thank-you.svg" alt="">
+          <div class="result">
+            You selected&nbsp;<span id="rating">0</span>&nbsp;out of 5
+          </div>
+          <h1 class="title">Thank you!</h1>
+          <div class="desc">
+            <p style="text-align: center;">We appreciate you taking the time to give a rating. If you ever need more
+              support,
+              don’t hesitate to get in touch!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/siunixdev" target="_blank">Abdillah Firdaus</a>.
+    </div>
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
